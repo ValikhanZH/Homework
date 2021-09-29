@@ -14,4 +14,4 @@ plt.ylabel('quantity')
 plt.show()
 
 
-I created a file, (sales data in csv format). If I show as pd, it gives table, i works, but if i add plt.plot it says the following: # AttributeError: 'DataFrame' object has no attribute 'thing'
+I created a file, (sales data in csv format). If I show as pd, it gives table, it works, but if i add plt.plot it says the following: # AttributeError: 'DataFrame' object has no attribute 'thing'
