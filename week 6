@@ -1,0 +1,14 @@
+import pandas as pd
+from matplotlib import pyplot as plt
+
+sales = pd.read_csv('sales data.csv') 
+
+shoes = sales[sales.thing == 'Thing']
+bag = sales[sales.bag == 'Bag']
+
+plt.plot(shoes.month, shoes.quantity/10**6)
+plt.plot(bag.month, bag.quantity/10**6)
+plt.legend(['Shoes'], ['Shoes'])
+plt.xlabel('month')
+plt.ylabel('quantity')
+plt.show()
